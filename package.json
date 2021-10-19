@@ -4,31 +4,33 @@
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
-  "source": "src/main.tsx",
+  "source": "src/index.ts",
   "module": "dist/module.js",
   "scripts": {
     "dev": "parcel watch",
     "build": "parcel build ",
+    "build-demo": "cd ./demo && yarn build ",
+    "start-demo": "cd ./demo && yarn start ",
     "test": "jest --watch"
   },
   "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "jest": "^27.2.1",
-    "parcel": "latest",
-    "react": "^17.0.2",
-    "typescript": "^4.4.3",
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
-    "babel-jest": "^27.2.1"
+    "@parcel/transformer-typescript-types": "^2.0.0-rc.0",
+    "@parcel/validator-typescript": "^2.0.0-nightly.890",
+    "@types/react": "^17.0.24",
+    "babel-jest": "^27.2.1",
+    "jest": "^27.2.1",
+    "parcel": "latest",
+    "typescript": "^4.4.3"
   },
   "peerDependencies": {
     "react": "^16.0.0-0 || ^17.0.0"
   },
   "description": "Masonry component react ",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
   "author": "MSkipper"
 }
