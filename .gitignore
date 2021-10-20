@@ -5,3 +5,4 @@
 /demo/.cache/
 /demo/.parcel-cache/
 /.parcel-cache
+dist
