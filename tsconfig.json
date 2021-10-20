@@ -1,34 +1,38 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "baseUrl": ".",
-    "outDir": "build/dist",
+    /* Specify ECMAScript target version */
+    "target": "es5",
+    /* Specify module code generation */
     "module": "esnext",
-    "target": "es2017",
-    "lib": ["es6", "dom", "esnext.asynciterable", "es2017"],
-    "sourceMap": true,
-    "allowJs": true,
+    /* Specify library files to be included in the compilation. */
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    /* Specify JSX code generation */
     "jsx": "react",
+    /* Generate corresponding .map files */
+    "sourceMap": true,
+    /* Enable all strict type-checking options */
+    "strict": true,
+    /* Specify module resolution strategy */
     "moduleResolution": "node",
-    "rootDir": "src",
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
-    "skipLibCheck": true,
+    /* Base directory to resolve non-absolute module names */
+    "baseUrl": "./src",
+    /* Maps imports to locations - e.g. ~models will go to ./src/models */
+    "paths": {
+      "~/*": [ "./*" ]
+    },
+    /* List of folders to include type definitions from */
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    /* allow import React instead of import * as React */
     "allowSyntheticDefaultImports": true,
-    "removeComments": true
+    /*  Emit interop between CommonJS and ES modules */
+    "esModuleInterop": true,
   },
-  "exclude": [
-    "node_modules",
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest",
-    "src/setupTests.ts"
+  "include": [
+    "src/**/*"
   ]
 }

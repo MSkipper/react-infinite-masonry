@@ -7,8 +7,8 @@
   "source": "src/index.ts",
   "module": "dist/module.js",
   "scripts": {
-    "dev": "parcel watch",
-    "build": "parcel build ",
+    "dev": "parcel src/index.ts",
+    "build": "parcel build --target main src/index.ts",
     "build-demo": "cd ./demo && yarn build ",
     "start-demo": "cd ./demo && yarn start ",
     "test": "jest --watch"
@@ -20,6 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
     "@parcel/transformer-typescript-types": "^2.0.0-rc.0",
     "@parcel/validator-typescript": "^2.0.0-nightly.890",
     "@types/react": "^17.0.24",

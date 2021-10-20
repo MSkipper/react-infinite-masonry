@@ -1,14 +1,15 @@
-import * as React from 'react'
-import {FC} from "react";
+import React, {FC} from 'react'
 
 export interface MasonryProps {
 
 }
 
-export const Masonry: FC<MasonryProps> = ({ }) => {
+const Masonry: FC<MasonryProps> = ({ }) => {
 
     return (<div>
 
     </div>)
 
 }
+
+export default Masonry;

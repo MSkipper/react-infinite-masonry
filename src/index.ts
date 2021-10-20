@@ -1,3 +1,3 @@
-import { Masonry } from "./masonry";
+import  Masonry  from "./masonry";
 
 export { Masonry };
