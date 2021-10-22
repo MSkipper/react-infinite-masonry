@@ -6,3 +6,4 @@
 /demo/.parcel-cache/
 /.parcel-cache
 dist
+/.cache
