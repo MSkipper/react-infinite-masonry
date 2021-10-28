@@ -7,7 +7,7 @@ export interface MasonryProps {
 const Masonry: FC<MasonryProps> = ({ }) => {
 
     return (<div>
-
+        Loading
     </div>)
 
 }
