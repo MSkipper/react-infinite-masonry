@@ -1,14 +1,32 @@
-import React, {FC} from 'react'
+import React, {FC, ReactElement} from 'react'
 
-export interface MasonryProps {
+interface Styles {
 
 }
 
-const Masonry: FC<MasonryProps> = ({ }) => {
+export type LoadingMode = 'none' | 'infinite' | 'infinite-button'
 
-    return (<div>
-        Loading
-    </div>)
+export interface MasonryProps {
+    // settings:
+    loadingMode: LoadingMode
+    styles: Styles;
+    columnWidth: number;
+    loadMore: () => ReactElement[];
+    isLazyContentLoading: boolean;
+
+}
+
+const Masonry: FC<Partial<MasonryProps>> = ({children }) => {
+
+    const displayItems = [];
+
+
+    return (
+    <div data-testid='' >
+        {children}
+    </div>
+
+    )
 
 }
 
